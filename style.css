@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+#controls label {
+    margin-right: 15px;
+}
+
+#legend {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 150px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 14px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-item div {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+#visualization {
+    flex-grow: 1;
+    position: relative;
+    margin-left: 150px; /* Same as legend width */
+    overflow: hidden;
+}
